@@ -24,7 +24,15 @@ export default class PartituraValidator {
    *    ```
    */
   public schema = schema.create({
-    
+    title: schema.string({}, [
+      rules.required()
+    ]),
+    autor: schema.string({},[
+      rules.required()
+    ]),
+    ano: schema.number({},[
+      rules.required()
+    ]),
   })
 
   /**

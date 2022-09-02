@@ -8,7 +8,7 @@ export default class extends BaseSchema {
       table.increments('id')
       table.string('title')
       table.string('autor')
-      table.integer('data')
+      table.integer('ano')
 
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL

@@ -13,7 +13,7 @@ export default class Partitura extends BaseModel {
   public autor: string
 
   @column()
-  public data: Number
+  public ano: number
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
