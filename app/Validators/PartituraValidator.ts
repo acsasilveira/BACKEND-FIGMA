@@ -30,9 +30,7 @@ export default class PartituraValidator {
     autor: schema.string({},[
       rules.required()
     ]),
-    ano: schema.number({},[
-      rules.required()
-    ]),
+    ano: schema.number(),
   })
 
   /**

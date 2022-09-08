@@ -1,10 +1,10 @@
 ######### Registro dos dados
 POST http://127.0.0.1:3333/partituras HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer Mg.pB_7OjrKyf5iTfAPE-K789gDyaCoY40-5gBVtPov571R6abzDW5gwjGvYPls
+Authorization: Bearer Mw.aPvJLwqjcj5GPSErhnILQFsUZaty6c1nQVGDW0F6D_swDAyBQHXttjdLE1Wp
 
 {
-    "title": "The Game is ON",
-    "autor": "Michael Price e David Arnold",
-    "ano": "2010"
+    "title": "Hallellujah",
+    "autor": "Leonard Cohen",
+    "ano": "1984"
 }
