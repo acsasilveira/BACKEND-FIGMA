@@ -22,7 +22,7 @@ export default class PartiturasController {
     }
 
     public async update({ request, params, response }: HttpContextContract) {
-        cont title = await request.validate(PartituraValidator)
+        const title = await request.validate(PartituraValidator)
         try{
             const partituras = await Partitura.findOrFail(params.id)
             partituras.title = title
