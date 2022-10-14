@@ -1,10 +1,9 @@
 ######### Registro dos dados
 POST http://127.0.0.1:3333/partituras HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer Mw.95i5WBqEkiv1ICdJcx0uF432wuWvO_WJaBR2XwLvE3XIEintz5hr60pXiZ_X
-
+Authorization: Bearer NA.b-U448wUISsp-NnaxWt_rHsksPuxtH0Eft0KHSyzJ_eLqN1MAxh5FWIRyke1
 {
-    "title": "Vals de Las Flores",
-    "autor": "Tchaikovsky",
-    "ano": "1840"
+    "title": "Sherlock",
+    "autor": "Sei lá",
+    "ano": "2001"
 }
