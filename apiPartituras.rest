@@ -1,7 +1,7 @@
 ######### Registro dos dados
 POST http://127.0.0.1:3333/partituras HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer NQ.OhEtsQjgK5HQrZ-EWDVr-uqtc3HUrNl8lAk0De3o5vQ7NokQSZOsOSPZMGph
+Authorization: Bearer NA.l7Pgd6EIPlhpGQcmd06lFDlVoaPD9LGu2wjwJBdQD9MIPKsmkqWp2mVYyY7E
 
 {
     "title": " ",
