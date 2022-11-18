@@ -14,7 +14,7 @@ export default class PartiturasController {
         return partitura
     }
 
-    public async show({ params, response }: HttpContextContract) {
+    public async show({ params }: HttpContextContract) {
        const partitura = await Partitura.findOrFail(params.id)
        return partitura
     }
