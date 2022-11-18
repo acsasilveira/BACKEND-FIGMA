@@ -1,6 +1,4 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-import HttpContext from '@ioc:Adonis/Core/HttpContext'
-import authConfig from '../../../config/auth'
 import Partitura from '../../Models/Partitura'
 import PartituraValidator from '../../Validators/PartituraValidator'
 
@@ -17,12 +15,12 @@ export default class PartiturasController {
     }
 
     public async show({ params, response }: HttpContextContract) {
-       const partitura = await Partitura
+       const partitura = await Partitura.findOrFail(params.id)
        return partitura
     }
 
     public async update({ request, params, response }: HttpContextContract) {
-        const title = await request.validate(PartituraValidator)
+        const {title, ano, autor} = await request.validate(PartituraValidator)
         try{
             const partituras = await Partitura.findOrFail(params.id)
             partituras.title = title
